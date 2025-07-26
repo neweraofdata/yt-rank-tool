@@ -1,3 +1,0 @@
-Flask
-youtube-search-python
-gunicorn
