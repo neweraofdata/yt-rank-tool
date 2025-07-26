@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ranking Results</title>
+</head>
+<body>
+    <h2>Ranking Results for {{ my_channel }}</h2>
+    <table border="1">
+        <tr><th>Keyword</th><th>Ranking Position</th></tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result.keyword }}</td>
+            <td>{{ result.position }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br><a href="/">Check another</a>
+</body>
+</html>
